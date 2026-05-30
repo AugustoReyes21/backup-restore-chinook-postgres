@@ -12,7 +12,15 @@ La arquitectura esta compuesta por:
 - Un archivo de backup SQL ubicado en `backup/Chinook_PostgreSql.sql`.
 - Un archivo de validacion ubicado en `evidence/validacion.sql`.
 
-El contenedor expone PostgreSQL en el puerto `5432` y usa el usuario `postgres` con password `postgres`, solamente para fines academicos/locales.
+El contenedor expone PostgreSQL internamente en el puerto `5432` y en la maquina local queda disponible en el puerto `5434`. Usa el usuario `postgres` con password `Buenas123`, solamente para fines academicos/locales.
+
+Datos de conexion para pgAdmin:
+
+- Host: `localhost`
+- Port: `5434`
+- Maintenance database: `postgres`
+- Username: `postgres`
+- Password: `Buenas123`
 
 ## Conceptos
 

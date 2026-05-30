@@ -16,6 +16,8 @@ cat docker-compose.yml
 docker compose up -d
 ```
 
+Si se muestra la configuracion de conexion, indicar que PostgreSQL queda disponible para pgAdmin en `localhost`, puerto `5434`, usuario `postgres` y contrasena `Buenas123`.
+
 3. Mostrar que el contenedor esta activo.
 
 ```bash

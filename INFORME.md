@@ -6,7 +6,7 @@ Agregar aqui el nombre completo del estudiante.
 
 ## Arquitectura utilizada
 
-La practica utiliza una arquitectura local basada en Docker Compose. Se levanta un contenedor de PostgreSQL usando la imagen oficial `postgres:16`. El servicio se llama `postgres` y el contenedor se identifica como `chinook-postgres`.
+La practica utiliza una arquitectura local basada en Docker Compose. Se levanta un contenedor de PostgreSQL usando la imagen oficial `postgres:16`. El servicio se llama `postgres` y el contenedor se identifica como `chinook-postgres`. PostgreSQL se ejecuta internamente en el puerto `5432` y se publica localmente en el puerto `5434`.
 
 La persistencia se maneja con un volumen Docker llamado `postgres_data`, el cual permite conservar los archivos internos de PostgreSQL aunque el contenedor sea detenido. El archivo de backup utilizado es `backup/Chinook_PostgreSql.sql`, que contiene las instrucciones SQL necesarias para crear y cargar la base de datos Chinook.
 
