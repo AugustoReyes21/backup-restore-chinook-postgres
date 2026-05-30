@@ -156,3 +156,7 @@ docker compose down -v
 - Nombre completo: agregar aqui el nombre del estudiante.
 - Enlace al video de Google Drive: agregar aqui el enlace con permisos de visualizacion.
 - Enlace al repositorio publico de GitHub: agregar aqui el enlace del repositorio.
+
+## Guia para grabar
+
+El archivo `GUIA_VIDEO.md` contiene un orden sugerido para grabar el video de maximo 3 minutos.
