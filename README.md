@@ -95,6 +95,12 @@ Resultados esperados principales:
 - Deben aparecer tablas como `album`, `artist`, `customer`, `employee`, `invoice`, `track`, entre otras.
 - La consulta de artistas debe devolver registros cargados.
 
+Evidencia de validacion obtenida:
+
+- Tablas restauradas: 11
+- Registros en `artist`: 275
+- Registros en `track`: 3503
+
 ## Fuente del backup
 
 El archivo `backup/Chinook_PostgreSql.sql` fue obtenido del repositorio publico de Chinook Database:
@@ -104,46 +110,6 @@ https://github.com/lerocha/chinook-database
 Ruta original:
 
 https://raw.githubusercontent.com/lerocha/chinook-database/master/ChinookDatabase/DataSources/Chinook_PostgreSql.sql
-
-## Comandos utiles para el video
-
-Mostrar el archivo `docker-compose.yml`:
-
-```bash
-cat docker-compose.yml
-```
-
-Levantar el contenedor y mostrar evidencia:
-
-```bash
-docker compose up -d
-docker ps
-```
-
-Copiar backup:
-
-```bash
-docker cp backup/Chinook_PostgreSql.sql chinook-postgres:/tmp/Chinook_PostgreSql.sql
-```
-
-Ingresar al contenedor:
-
-```bash
-docker exec -it chinook-postgres sh
-```
-
-Restaurar:
-
-```bash
-psql -U postgres < /tmp/Chinook_PostgreSql.sql
-```
-
-Validar:
-
-```bash
-psql -U postgres -d chinook -c "\dt"
-psql -U postgres -d chinook -c "SELECT COUNT(*) FROM artist;"
-```
 
 ## Limpieza del ambiente
 
@@ -158,13 +124,3 @@ Eliminar tambien el volumen de datos:
 ```bash
 docker compose down -v
 ```
-
-## Datos para el entregable PDF
-
-- Nombre completo: agregar aqui el nombre del estudiante.
-- Enlace al video de Google Drive: agregar aqui el enlace con permisos de visualizacion.
-- Enlace al repositorio publico de GitHub: agregar aqui el enlace del repositorio.
-
-## Guia para grabar
-
-El archivo `GUIA_VIDEO.md` contiene un orden sugerido para grabar el video de maximo 3 minutos.
